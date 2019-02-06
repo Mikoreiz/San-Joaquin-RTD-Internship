@@ -42,33 +42,6 @@ for index, line in enumerate(inputfile):
 	del row[2:-1]
 	row[2] = row[2].replace("*", "")
 	line = row
-# 	print(line)
-
-
-#FOR OUTPUT2.TXT
-#Filters the scraped data and takes out unneeded information
-# for index, line in enumerate(inputfile):
-# 	row = line.split(' ')
-# 	row = row[:-8] + row[-3:-1]
-# 	time = row[-1] + " " + row[-2]
-# 	time = time[1:]
-# 	row[-2] = time
-# 	del row[-1]
-# 	row[1] =' '.join(row[1:-1])
-# 	del row[2:-1]
-# 	row[2] = row[2].replace("*", "")
-# 	line = row	
-# 	row = line.split(' ')
-# 	row = row[:-8] + row[-2:]
-# 	time = " ".join(row[-2:])
-# 	time = time[1:]
-# 	row[-2] = time
-# 	del row[-1]
-# 	row[1] =' '.join(row[1:-1])
-# 	del row[2:-1]
-# 	row[2] = row[2].replace("*", "")
-# 	row[2] = row[2].replace("\n", "")
-# 	line = row
 
 	#Takes scraped time and adds the current Year-Month-Day
 	depart_string = formatYMD + " " + row[2]
